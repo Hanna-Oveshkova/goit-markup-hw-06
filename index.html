@@ -48,16 +48,105 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-x"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="nav-mobile-list">
+              <li class="nav-mobile-item">
+                <a class="nav-mobile-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="nav-mobile-item">
+                <a class="nav-mobile-link" href="">Portfolio</a>
+              </li>
+              <li class="nav-mobile-item">
+                <a class="nav-mobile-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts-item">
+                <a class="contacts-mobile-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="contacts-mobile-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="menu-socials-list">
+            <li class="menu-socials-items">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="menu-link-icons"
+              >
+                <svg class="menu-item-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-socials-items">
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="menu-link-icons"
+              >
+                <svg class="menu-item-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-socials-items">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="menu-link-icons"
+              >
+                <svg class="menu-item-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-socials-items">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="menu-link-icons"
+              >
+                <svg class="menu-item-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="title-hero">Effective Solutions for Your Business</h1>
           <button class="input-hero" type="button">Order Service</button>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages hidden">
         <div class="container">
           <h2 class="visualli-hidden">Our advantages</h2>
           <ul class="advantages-list">
@@ -112,7 +201,7 @@
           </ul>
         </div>
       </section>
-      <section class="time">
+      <section class="time hidden">
         <div class="container">
           <h2 class="time-title">Our Team</h2>
           <ul class="time-list">
@@ -351,7 +440,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -473,7 +562,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container-footer">
         <div class="container-footer-logo">
           <a class="logo footer-logo" href="./index.html"
@@ -539,7 +628,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg class="modal-close-icon" width="8" height="8">
