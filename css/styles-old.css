@@ -8,18 +8,6 @@
   margin-left: auto;
 }
 
-.title-hero {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #fff;
-  max-width: 496px;
-  margin: 0 auto;
-  margin-bottom: 48px;
-}
-
 .hero {
   background-color: #2e2f42;
   padding: 188px 0 188px;

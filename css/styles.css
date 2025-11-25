@@ -424,3 +424,26 @@ button {
 .link-icons:focus {
   background-color: #404bbf;
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 112px 0 112px;
+    max-width: 768px;
+  }
+  .title-hero {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0 188px;
+    max-width: 1440px;
+  }
+  .title-hero {
+    margin-bottom: 48px;
+  }
+}
