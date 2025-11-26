@@ -382,11 +382,6 @@ button {
   margin: 0 auto;
 }
 
-@media (min-resolution: 192dpi) {
-  .hero {
-  }
-}
-
 .title-hero {
   font-weight: 700;
   font-size: 36px;
@@ -750,6 +745,7 @@ button {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 72px;
 }
 
 .container-footer-logo {
@@ -772,22 +768,16 @@ button {
   max-width: 100%;
 }
 
-.footer-social {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-}
-
 .page-footer {
   background-color: #2e2f42;
   padding: 96px 0;
 }
 
-.container-footer {
+/* .container-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .container-footer-logo {
   margin: 0 auto;
@@ -809,8 +799,101 @@ button {
   max-width: 264px;
 }
 
-.footer-social {
-  display: inline-block;
+/* .footer-social {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+} */
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
+}
+
+/* .footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+} */
+
+.subscribe-form {
+  display: contents;
+}
+
+.subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.subscribe-form-email {
+  width: 288px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.button-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  background-color: #4d5ae5;
+  padding: 8px 24px;
+  margin: auto;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
