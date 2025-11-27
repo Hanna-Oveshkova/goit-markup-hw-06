@@ -382,6 +382,16 @@ button {
   margin: 0 auto;
 }
 
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-m@2x.jpg);
+  }
+}
+
 .title-hero {
   font-weight: 700;
   font-size: 36px;
@@ -423,10 +433,11 @@ button {
   background-color: #404bbf;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
     padding: 112px 0 112px;
-    max-width: 768px;
+    background-image: url(../images/hero-t@2x.jpg);
+    min-width: 768px;
   }
   .title-hero {
     font-size: 56px;
@@ -436,10 +447,11 @@ button {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
     padding: 188px 0 188px;
     max-width: 1440px;
+    background-image: url(../images/hero-d@2x.jpg);
   }
   .title-hero {
     margin-bottom: 48px;
