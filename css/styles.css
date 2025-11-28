@@ -374,7 +374,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero-m.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -433,10 +433,14 @@ button {
   background-color: #404bbf;
 }
 
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) {
   .hero {
     padding: 112px 0 112px;
-    background-image: url(../images/hero-t@2x.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-t.jpg);
     min-width: 768px;
   }
   .title-hero {
@@ -447,14 +451,38 @@ button {
   }
 }
 
-@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-t@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
   .hero {
     padding: 188px 0 188px;
     max-width: 1440px;
-    background-image: url(../images/hero-d@2x.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
   }
   .title-hero {
     margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
   }
 }
 
@@ -656,7 +684,7 @@ button {
   overflow: hidden;
   border: solid 1px #e7e9fc;
   border-radius: 0 0 4px 4px;
-  max-width: 360px;
+  max-width: 356px;
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -724,11 +752,20 @@ button {
     gap: 24px;
     row-gap: 72px;
   }
+
+  .portfolio-img {
+    width: 356px;
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .portfolio {
     padding: 120px 0;
+  }
+
+  .portfolio-img {
+    width: 360px;
   }
 
   .portfolio:hover {
